@@ -7,6 +7,15 @@
 	</head>
 
 	<body>
-		<a href="javascript:(function(){(function(b,a){a.write('<p><code>window.innerWidth</code> '+b.innerWidth/16+'em<br><code>document.documentElement.clientWidth</code> '+a.documentElement.clientWidth/16+'em')})(window,document);}());">em</a>
+		<a href="javascript:(function(b,a){a.write('<p><code>window.innerWidth</code> <input autofocus value=\''+window.innerWidth/16+'em\'><br><code>document.documentElement.clientWidth</code> <input value=\''+document.documentElement.clientWidth/16+'em\'></p>')})(window,document);">em</a>
+
+		<script>
+			/*(function(win, doc) {
+				doc.write(
+					'<p><code>window.innerWidth</code> <input autofocus value="' + window.innerWidth / 16 + 'em"><br><code>document.documentElement.clientWidth</code> <input value="' + document.documentElement.clientWidth / 16 + 'em"></p>'
+				);
+			}(window, document));*/
+		</script>
 	</body>
 </html>
+
